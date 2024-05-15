@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Christian Johnson
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Christian Johnson} \\ \vspace{3pt}
+    \small 949-501-6639 $|$ \href{mailto:chrjohnson@hmc.edu}{\underline{chrjohnson@hmc.edu}} $|$ 
+    \href{https://www.linkedin.com/in/chrjohnson26/}{\underline{linkedin.com/in/chrjohnson}} $|$
+    \href{https://github.com/chrjohnson26}{\underline{github.com/chrjohnson}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvey Mudd College}{Claremont, CA}
+      {Bachelor of Science, Mathematics and Computer Science}{May 2026}
+      \resumeItemListStart
+          \resumeItem{Dean's List -- Fall 2023, Spring 2023}
+          \resumeItem{Most innovative project award at a student organized hackathon}
+          \resumeItem{Relevant Courses: Computability \& logic, Computer Systems, Data Structures, Digital Electronics \& Computer Engineering, Discrete Mathematics, Differential Equations, Linear Algebra, Network Science, Numerical Analysis, Probability \& Statistics, and Real Analysis  }
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Computer Science and Mathematics Department TA}{May 2024 -- Present}
+      {Harvey Mudd College}{Claremont, CA}
+        \resumeItemListStart
+            \resumeItem{Evaluate and provide detailed feedback on problem sets for 100+ engineering students enrolled in MATH56: Probability \& Statistics for Engineers}
+            \resumeItem{Grade assignments for over 200 first-year students enrolled in CS5: Introduction to Computer Science course}
+            \resumeItem{Assist students struggling with fundamental programming concepts and techniques using Python and Assembly language in weekly lab hours}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Group Founder}{Mar. 2023 -- Present}
+      {Project GLARE}{Claremont, CA}
+        \resumeItemListStart
+            \resumeItem{Founder of a research group focused on reducing glare using spatial light modulators and liquid crystal displays}
+            \resumeItem{Received a \$16,500 grant from the Shanahan Project Fund for the ``Project GLARE'' initiative}
+            \resumeItem{Constructed a photoresistor circuit to interpret incoming light intensity data}
+            \resumeItem{Currently developing a program with Juypter Notebooks to analyze image files in real-time to adjust light transmission using pandas, Numpy, and openCV}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {STEM Instructor}{May 2023 -- Aug. 2023}
+      {Stemtree Education Center}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Taught students a range of subjects including science, math electrical engineering, robotics, and coding}
+        \resumeItem{Used technology and digital tools to enhance instruction while striving to encourage a growth mindset, curiosity, and instill a passion for lifelong learning}
+        \resumeItem{Integrated real-world applications into the curriculum}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Prison Education Project} \emph{}}{Aug. 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed engaging lectures to incarcerated individuals helping them explore the captivating world of science, math, engineering, and technology}
+            \resumeItem{Working to foster an inclusive and respectful learning environment, empowering students to think critically, embrace curiosity, and achieve personal growth}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Simple Neural Network} $|$ \emph{MNIST Dataset, NumPy, Pandas}}{June 2023 -- Aug. 2023}
+          \resumeItemListStart
+            \resumeItem{Implemented a two-layer neural network from scratch using only NumPy and Pandas python libraries}
+            \resumeItem{Preprocessed the MNIST handwritten digit dataset consisting of 60,000 training images and 10,000 test images}
+            \resumeItem{Utilized matrix multiplication and the ReLu activation function for forward propagation}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, Makefile, R, Assembly (x86 architecture), \LaTeX} \\
+     \textbf{Developer Tools}{: Git, GDB Debugger, Docker, Visual Studio Code, R Studio, Terminal, Juypter Notebook, Eclipse} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, OpenCV, ggplot2}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
